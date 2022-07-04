@@ -12,6 +12,7 @@ const SectionTitle = (props: SectionTitleProps) => {
       textDecorationColor={useColorModeValue('purple.500', 'orange.200')}
       textDecorationLine="underline"
       textUnderlineOffset="0.2rem"
+      marginBottom="5"
     >
       {props.children}
     </Heading>

@@ -30,7 +30,7 @@ const MainLayout = (props: MainLayoutProps) => {
       <Container
         maxWidth="container.md"
         paddingTop="40"
-        minHeight="calc(100vh - 2.5rem)"
+        minHeight="calc(100vh - 5rem)"
       >
         {props.children}
       </Container>
