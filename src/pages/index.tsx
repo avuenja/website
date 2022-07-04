@@ -24,10 +24,6 @@ const Home: NextPage = () => {
         <SectionTitle>Bio</SectionTitle>
       </Section>
 
-      <Section delay={0.3}>
-        <SectionTitle>I ♥️</SectionTitle>
-      </Section>
-
       <Section delay={0.4}>
         <SectionTitle>On the web</SectionTitle>
       </Section>
