@@ -24,6 +24,7 @@ const CookiesAlert = (props: CookiesAlertProps) => {
       width="full"
       bottom="0"
       padding="5"
+      zIndex="toast"
     >
       <Box
         bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.50')}
