@@ -2,7 +2,7 @@ import { Box, Container, HStack, useColorModeValue } from '@chakra-ui/react'
 
 import Brand from './brand'
 import NavLinks from './nav-links'
-import ToggleTheme from './toggle-theme'
+import ToggleTheme from '../toggle-theme'
 
 const Navbar = () => {
   return (

@@ -1,14 +1,14 @@
-import type { IconProps } from 'phosphor-react'
-import { Icon } from '@chakra-ui/react'
+import type { IconProps as PhosphorIconProps } from 'phosphor-react'
+import { Icon, type IconProps } from '@chakra-ui/react'
 
-interface AppIconProps {
+interface AppIconProps extends IconProps {
   icon: React.ForwardRefExoticComponent<
-    IconProps & React.RefAttributes<SVGSVGElement>
+    PhosphorIconProps & React.RefAttributes<SVGSVGElement>
   >
 }
 
-const AppIcon = (props: AppIconProps) => {
-  return <Icon as={props.icon} width="5" height="5" />
+const AppIcon = ({ icon, ...props }: AppIconProps) => {
+  return <Icon as={icon} width="5" height="5" {...props} />
 }
 
 export default AppIcon

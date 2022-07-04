@@ -3,12 +3,17 @@ import { Container } from '@chakra-ui/react'
 
 import Navbar from '../navbar'
 import Footer from '../footer'
+import CookiesAlert from '../cookies-alert'
 
 interface MainLayoutProps {
   children: React.ReactNode
 }
 
 const MainLayout = (props: MainLayoutProps) => {
+  const onAcceptCookies = () => {
+    console.log('accepted cookies')
+  }
+
   return (
     <>
       <Head>
@@ -31,6 +36,8 @@ const MainLayout = (props: MainLayoutProps) => {
       </Container>
 
       <Footer />
+
+      <CookiesAlert onAccept={onAcceptCookies} />
     </>
   )
 }

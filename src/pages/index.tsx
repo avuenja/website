@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         marginBottom="20"
         borderRadius="md"
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.200')}
         style={{ backdropFilter: 'blur(0.625rem)' }}
       >
         Hello, I&apos;m a Brazilian software developer based in Italy!
