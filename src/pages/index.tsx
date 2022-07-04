@@ -1,15 +1,5 @@
 import type { NextPage } from 'next'
-import NextLink from 'next/link'
-import {
-  Box,
-  Link,
-  List,
-  ListIcon,
-  ListItem,
-  Text,
-  useColorModeValue,
-  VStack,
-} from '@chakra-ui/react'
+import { Box, List, Text, useColorModeValue } from '@chakra-ui/react'
 
 import Section from '@/components/section'
 import SectionTitle from '@/components/section/section-title'
@@ -25,7 +15,10 @@ const Home: NextPage = () => {
         borderRadius="md"
         textAlign="center"
         bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.200')}
-        style={{ backdropFilter: 'blur(0.625rem)' }}
+        style={{
+          backdropFilter: 'blur(0.625rem)',
+          WebkitBackdropFilter: 'blur(0.625rem)',
+        }}
       >
         Hello, I&apos;m a Brazilian software developer based in Italy!
       </Box>

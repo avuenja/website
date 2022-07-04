@@ -28,7 +28,10 @@ const CookiesAlert = (props: CookiesAlertProps) => {
     >
       <Box
         bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.50')}
-        style={{ backdropFilter: 'blur(0.625rem)' }}
+        style={{
+          backdropFilter: 'blur(0.625rem)',
+          WebkitBackdropFilter: 'blur(0.625rem)',
+        }}
         padding="5"
         borderRadius="md"
         maxWidth="xl"
