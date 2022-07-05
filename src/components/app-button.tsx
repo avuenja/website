@@ -5,6 +5,7 @@ const AppButton = ({ children, ...props }: ButtonProps) => {
     <Button
       colorScheme={useColorModeValue('purple', 'orange')}
       padding="5"
+      minWidth="auto"
       {...props}
     >
       {children}

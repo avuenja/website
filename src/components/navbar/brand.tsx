@@ -13,7 +13,7 @@ const Brand = () => {
 
       <NextLink href="/" passHref>
         <Link style={{ textDecoration: 'none' }}>
-          <Heading size="md" letterSpacing="tighter">
+          <Heading size="md" letterSpacing="tighter" whiteSpace="nowrap">
             Marcelo Pecin
           </Heading>
         </Link>

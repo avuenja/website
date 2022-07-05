@@ -19,11 +19,11 @@ interface CookiesAlertProps {
 const CookiesAlert = (props: CookiesAlertProps) => {
   return (
     <Flex
-      direction="row-reverse"
       position="fixed"
       width="full"
       bottom="0"
-      padding="5"
+      justifyContent="center"
+      paddingY={{ base: 0, sm: 4 }}
       zIndex="toast"
     >
       <Box
@@ -32,11 +32,11 @@ const CookiesAlert = (props: CookiesAlertProps) => {
           backdropFilter: 'blur(0.625rem)',
           WebkitBackdropFilter: 'blur(0.625rem)',
         }}
-        padding="5"
-        borderRadius="md"
-        maxWidth="xl"
+        padding={{ base: 2, sm: 5 }}
+        borderRadius={{ base: 'none', sm: 'md' }}
+        width="container.sm"
       >
-        <HStack spacing="2">
+        <HStack spacing={{ base: 2, sm: 5 }}>
           <AppIcon
             icon={Cookie}
             color={useColorModeValue('purple.500', 'orange.200')}
@@ -44,9 +44,9 @@ const CookiesAlert = (props: CookiesAlertProps) => {
             height="8"
           />
 
-          <VStack spacing="2" alignItems="start">
+          <VStack spacing="2" alignItems="start" width="full">
             <Heading size="sm">This website uses cookies</Heading>
-            <Text color="gray.500">
+            <Text color={useColorModeValue('gray.600', 'gray.400')}>
               We only use strictly necessary cookies. Only cookies necessary for
               the website to function.
             </Text>

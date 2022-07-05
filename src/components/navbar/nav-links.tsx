@@ -3,7 +3,7 @@ import { HStack, Link } from '@chakra-ui/react'
 
 const NavLinks = () => {
   return (
-    <HStack spacing="5">
+    <HStack spacing="5" display={{ base: 'none', sm: 'flex' }}>
       <NextLink href="/posts" passHref>
         <Link>Posts</Link>
       </NextLink>
