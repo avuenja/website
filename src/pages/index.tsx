@@ -1,12 +1,13 @@
-import type { NextPage } from 'next'
+import type { ReactElement } from 'react'
 import { Box, List, Text, useColorModeValue } from '@chakra-ui/react'
 
+import type { NextPageWithLayout } from '@/types'
+import MainLayout from '@/components/layouts/main'
 import Section from '@/components/section'
 import SectionTitle from '@/components/section/section-title'
-import { ArrowRight } from 'phosphor-react'
 import AppListItem from '@/components/app-list-item'
 
-const Home: NextPage = () => {
+const Home: NextPageWithLayout = () => {
   return (
     <>
       <Box
@@ -52,5 +53,7 @@ const Home: NextPage = () => {
     </>
   )
 }
+
+Home.getLayout = (page: ReactElement) => <MainLayout>{page}</MainLayout>
 
 export default Home

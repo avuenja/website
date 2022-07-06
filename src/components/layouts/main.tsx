@@ -1,4 +1,6 @@
+import React from 'react'
 import Head from 'next/head'
+import { AnimatePresence } from 'framer-motion'
 import { Container } from '@chakra-ui/react'
 
 import Navbar from '../navbar'
@@ -10,8 +12,21 @@ interface MainLayoutProps {
 }
 
 const MainLayout = (props: MainLayoutProps) => {
+  const [isShowCookieAlert, setIsShowCookieAlert] = React.useState(false)
+
+  React.useEffect(() => {
+    const cookiesAccepted = localStorage.getItem('mp-cookies-accepted')
+
+    if (cookiesAccepted === null) {
+      setIsShowCookieAlert(true)
+    } else {
+      setIsShowCookieAlert(false)
+    }
+  }, [])
+
   const onAcceptCookies = () => {
-    console.log('accepted cookies')
+    localStorage.setItem('mp-cookies-accepted', 'true')
+    setIsShowCookieAlert(false)
   }
 
   return (
@@ -37,7 +52,9 @@ const MainLayout = (props: MainLayoutProps) => {
 
       <Footer />
 
-      <CookiesAlert onAccept={onAcceptCookies} />
+      <AnimatePresence>
+        {isShowCookieAlert && <CookiesAlert onAccept={onAcceptCookies} />}
+      </AnimatePresence>
     </>
   )
 }
