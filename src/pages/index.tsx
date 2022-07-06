@@ -1,8 +1,9 @@
 import type { ReactElement } from 'react'
-import { Box, List, Text, useColorModeValue } from '@chakra-ui/react'
+import { Link, List, Text } from '@chakra-ui/react'
 
 import type { NextPageWithLayout } from '@/types'
 import MainLayout from '@/components/layouts/main'
+import FeaturedMessage from '@/components/featured-message'
 import Section from '@/components/section'
 import SectionTitle from '@/components/section/section-title'
 import AppListItem from '@/components/app-list-item'
@@ -10,27 +11,20 @@ import AppListItem from '@/components/app-list-item'
 const Home: NextPageWithLayout = () => {
   return (
     <>
-      <Box
-        padding="5"
-        marginBottom="20"
-        borderRadius="md"
-        textAlign="center"
-        bg={useColorModeValue('blackAlpha.50', 'whiteAlpha.200')}
-        style={{
-          backdropFilter: 'blur(0.625rem)',
-          WebkitBackdropFilter: 'blur(0.625rem)',
-        }}
-      >
+      <FeaturedMessage>
         Hello, I&apos;m a Brazilian software developer based in Italy!
-      </Box>
+      </FeaturedMessage>
 
       <Section>
-        <SectionTitle>Work</SectionTitle>
+        <SectionTitle>About</SectionTitle>
         <Text textAlign="justify" style={{ textIndent: '1em' }}>
-          Working with development of softwares, websites and mobile apps. I
-          work PHP developer since 2013, and now also ReactJs and React Native,
-          DevOps, NodeJs and Flutter developer. Ever looking for to learn about
-          my area, and developing new skills and improving already known.
+          I have been a PHP developer since 2013 and over time, I learned
+          countless technics, languages, and patterns that helped me to create
+          what I am now. Now I also work effectively with the ReactJs and React
+          Native, DevOps (Kubernetes with CI/CD), and NodeJs technologies. I am
+          always looking to learn more about my area, develop new skills,
+          improve the already learning, and exchange knowledge, and culture with
+          people.
         </Text>
       </Section>
 
