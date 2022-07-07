@@ -1,8 +1,9 @@
 import type { ReactElement } from 'react'
-import { Link, List, Text } from '@chakra-ui/react'
+import { List, Text } from '@chakra-ui/react'
 
 import type { NextPageWithLayout } from '@/types'
 import MainLayout from '@/components/layouts/main'
+import Profile from '@/components/profile'
 import FeaturedMessage from '@/components/featured-message'
 import Section from '@/components/section'
 import SectionTitle from '@/components/section/section-title'
@@ -11,6 +12,8 @@ import AppListItem from '@/components/app-list-item'
 const Home: NextPageWithLayout = () => {
   return (
     <>
+      <Profile />
+
       <FeaturedMessage>
         Hello, I&apos;m a Brazilian software developer based in Italy!
       </FeaturedMessage>
@@ -29,10 +32,6 @@ const Home: NextPageWithLayout = () => {
       </Section>
 
       <Section delay={0.1}>
-        <SectionTitle>Bio</SectionTitle>
-      </Section>
-
-      <Section delay={0.2}>
         <SectionTitle>On the web</SectionTitle>
         <List spacing="2.5" style={{ textIndent: '1em' }}>
           <AppListItem href="https://github.com/avuenja">GitHub</AppListItem>

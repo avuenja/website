@@ -10,7 +10,7 @@ const Navbar = () => {
       as="nav"
       position="fixed"
       width="full"
-      bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.0')}
+      bg={useColorModeValue('whiteAlpha.0', 'blackAlpha.0')}
       style={{
         backdropFilter: 'blur(0.625rem)',
         WebkitBackdropFilter: 'blur(0.625rem)',

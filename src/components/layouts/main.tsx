@@ -45,7 +45,9 @@ const MainLayout = (props: MainLayoutProps) => {
       <Container
         maxWidth="container.md"
         paddingTop="40"
-        minHeight="calc(100vh - 5rem)"
+        minHeight="calc(100vh - 4rem)"
+        display="flex"
+        flexDirection="column"
       >
         {props.children}
       </Container>
