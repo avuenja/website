@@ -3,8 +3,20 @@ import { Box, Container, HStack, useColorModeValue } from '@chakra-ui/react'
 import Brand from './brand'
 import NavLinks from './nav-links'
 import ToggleTheme from '../toggle-theme'
+import MobileMenu from '../mobile-menu'
 
 const Navbar = () => {
+  const links = [
+    {
+      href: '/posts',
+      label: 'Posts',
+    },
+    {
+      href: '/works',
+      label: 'Works',
+    },
+  ]
+
   return (
     <Box
       as="nav"
@@ -27,10 +39,16 @@ const Navbar = () => {
         <HStack spacing="20">
           <Brand />
 
-          <NavLinks />
+          <NavLinks links={links} />
         </HStack>
 
-        <ToggleTheme />
+        <HStack spacing="2.5">
+          <ToggleTheme />
+
+          <Box display={{ base: 'inline-flex', sm: 'none' }}>
+            <MobileMenu links={links} />
+          </Box>
+        </HStack>
       </Container>
     </Box>
   )

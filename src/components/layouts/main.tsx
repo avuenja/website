@@ -33,7 +33,10 @@ const MainLayout = (props: MainLayoutProps) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Marcelo Pecin's homepage" />
+        <meta
+          name="description"
+          content="Marcelo Pecin - Software developer (PHP/React/React Native)"
+        />
         <meta name="author" content="Marcelo Pecin" />
         <meta name="author" content="avuenja" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />

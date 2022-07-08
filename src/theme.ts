@@ -6,7 +6,11 @@ const config: ThemeConfig = {
   useSystemColorMode: true,
 }
 
-const colors = {}
+const colors = {
+  brand: {
+    light: '#fbf0df',
+  },
+}
 
 const fonts = {
   heading: `'M PLUS Rounded 1c', sans-serif`,

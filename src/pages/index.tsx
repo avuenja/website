@@ -1,4 +1,3 @@
-import type { ReactElement } from 'react'
 import { List, Text } from '@chakra-ui/react'
 
 import type { NextPageWithLayout } from '@/types'
@@ -47,6 +46,6 @@ const Home: NextPageWithLayout = () => {
   )
 }
 
-Home.getLayout = (page: ReactElement) => <MainLayout>{page}</MainLayout>
+Home.getLayout = (page: React.ReactElement) => <MainLayout>{page}</MainLayout>
 
 export default Home
