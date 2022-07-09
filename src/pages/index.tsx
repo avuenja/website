@@ -1,4 +1,4 @@
-import { List, Text } from '@chakra-ui/react'
+import { HStack, List, Text } from '@chakra-ui/react'
 
 import type { NextPageWithLayout } from '@/types'
 import MainLayout from '@/components/layouts/main'
@@ -6,6 +6,7 @@ import Profile from '@/components/profile'
 import FeaturedMessage from '@/components/featured-message'
 import Section from '@/components/section'
 import SectionTitle from '@/components/section/section-title'
+import Paragraph from '@/components/paragraph'
 import AppListItem from '@/components/app-list-item'
 
 const Home: NextPageWithLayout = () => {
@@ -19,15 +20,14 @@ const Home: NextPageWithLayout = () => {
 
       <Section>
         <SectionTitle>About</SectionTitle>
-        <Text textAlign="justify" style={{ textIndent: '1em' }}>
+        <Paragraph>
           I have been a PHP developer since 2013 and over time, I learned
           countless technics, languages, and patterns that helped me to create
           what I am now. Now I also work effectively with the ReactJs and React
-          Native, DevOps (Kubernetes with CI/CD), and NodeJs technologies. I am
-          always looking to learn more about my area, develop new skills,
-          improve the already learning, and exchange knowledge, and culture with
-          people.
-        </Text>
+          Native, DevOps, and NodeJs technologies. I am always looking to learn
+          more about my area, develop new skills, improve the already learning,
+          and exchange knowledge, and culture with people.
+        </Paragraph>
       </Section>
 
       <Section delay={0.1}>
