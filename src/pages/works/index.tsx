@@ -11,7 +11,7 @@ const Works: NextPageWithLayout = () => {
       <Section>
         <SimpleGrid columns={{ base: 1, sm: 2 }} spacing="10">
           <GridItem
-            title="Gerador de CPF, CNPF e RG válidos"
+            title="Gerador de CPF, CNPJ e RG válidos"
             thumbnail="/works/gerador-cpf-cnpj.jpeg"
             href="https://gerador.progmar.dev"
           />
