@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { SimpleGrid } from '@chakra-ui/react'
 
 import type { NextPageWithLayout } from '@/types'
@@ -8,6 +9,10 @@ import GridItem from '@/components/grid-item'
 const Works: NextPageWithLayout = () => {
   return (
     <>
+      <Head>
+        <title>Marcelo Pecin - Works</title>
+      </Head>
+
       <Section>
         <SimpleGrid columns={{ base: 1, sm: 2 }} spacing="10">
           <GridItem
