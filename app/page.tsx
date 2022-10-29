@@ -1,57 +1,57 @@
 import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
+import profilePic from '../public/me.jpeg'
+import ItemLink from './components/item-link'
+import Section from './components/section'
+
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+    <>
+      <div className="flex items-center justify-between py-8">
+        <div>
+          <h1 className="text-3xl font-semibold">Marcelo Pecin</h1>
+          <p className="text-slate-500 dark:text-slate-400">
+            Software developer (PHP/React/Flutter)
+          </p>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+        <Image
+          className="w-32 rounded-full ring ring-violet-500 ring-offset-2 dark:ring-orange-300 dark:ring-offset-slate-800"
+          src={profilePic}
+          alt="It's me!"
+          priority={true}
+        />
+      </div>
+
+      <div className="my-16 rounded-md bg-violet-50 p-4 text-center dark:bg-slate-500 dark:bg-opacity-50">
+        <h2>Hello, I'm a Brazilian software developer based in Italy!</h2>
+      </div>
+
+      <Section title="About">
+        <p className="text-justify indent-8 leading-relaxed">
+          I have been a PHP developer since 2013 and over time, I learned
+          countless technics, languages, and patterns that helped me to create
+          what I am now. Now I also work effectively with the ReactJs and React
+          Native, DevOps, and NodeJs technologies. I am always looking to learn
+          more about my area, develop new skills, improve the already learning,
+          and exchange knowledge, and culture with people.
+        </p>
+      </Section>
+
+      <Section title="On the web">
+        <div className="inline-flex flex-col space-y-2">
+          <ItemLink href="https://github.com/avuenja">GitHub</ItemLink>
+          <ItemLink href="https://www.linkedin.com/in/celopeccin">
+            LinkedIn
+          </ItemLink>
+          <ItemLink href="https://www.instagram.com/celopeccin">
+            Instagram
+          </ItemLink>
+          <ItemLink href="https://www.twitter.com/avuenja">Twitter</ItemLink>
+        </div>
+      </Section>
+    </>
   )
 }
+
+export default Home
