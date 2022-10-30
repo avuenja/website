@@ -14,7 +14,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body className="flex h-screen flex-col bg-slate-50 text-slate-900 antialiased dark:bg-slate-800 dark:text-slate-50">
+      <body className="flex h-screen flex-col bg-slate-50 text-slate-900 antialiased selection:bg-violet-100 dark:bg-slate-800 dark:text-slate-50 dark:selection:bg-slate-500">
         <Header />
 
         <main className="mx-48 flex-grow">{children}</main>

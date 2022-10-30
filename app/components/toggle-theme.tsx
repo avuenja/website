@@ -43,7 +43,7 @@ const ToggleTheme = () => {
 
   return (
     <Button onClick={onToggleTheme}>
-      {darkTheme ? <SunIcon className="w-5 text-slate-900" /> : <MoonIcon />}
+      {darkTheme ? <SunIcon className="text-slate-900" /> : <MoonIcon />}
     </Button>
   )
 }

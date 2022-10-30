@@ -1,7 +1,8 @@
 import Image from 'next/image'
-
 import profilePic from '../public/me.jpeg'
+
 import ItemLink from './components/item-link'
+import Jumbotron from './components/jumbotron'
 import Section from './components/section'
 
 const Home = () => {
@@ -18,14 +19,14 @@ const Home = () => {
         <Image
           className="w-32 rounded-full ring ring-violet-500 ring-offset-2 dark:ring-orange-300 dark:ring-offset-slate-800"
           src={profilePic}
-          alt="It's me!"
+          alt="It's me and a big toy bear!"
           priority={true}
         />
       </div>
 
-      <div className="my-16 rounded-md bg-violet-50 p-4 text-center dark:bg-slate-500 dark:bg-opacity-50">
+      <Jumbotron>
         <h2>Hello, I'm a Brazilian software developer based in Italy!</h2>
-      </div>
+      </Jumbotron>
 
       <Section title="About">
         <p className="text-justify indent-8 leading-relaxed">

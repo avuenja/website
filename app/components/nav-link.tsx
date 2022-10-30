@@ -17,9 +17,9 @@ const NavLink = ({ href, children }: NavLinkProps) => {
       href={href}
       className={`${
         active
-          ? `rounded-sm bg-violet-500 p-2 font-semibold text-white dark:bg-orange-400`
+          ? `underline decoration-violet-500 decoration-double decoration-2 underline-offset-2 dark:decoration-orange-300`
           : ``
-      } hover:underline hover:decoration-violet-500 hover:decoration-double hover:decoration-2 dark:hover:decoration-orange-300`}
+      } underline-offset-2 hover:underline hover:decoration-violet-500 hover:decoration-double hover:decoration-2 dark:hover:decoration-orange-300`}
     >
       {children}
     </Link>

@@ -1,4 +1,4 @@
-const SunIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const SunIcon = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +6,7 @@ const SunIcon = (props: React.SVGProps<SVGSVGElement>) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-5 w-5"
+      className={`h-5 w-5 ${className}`}
       {...props}
     >
       <path
