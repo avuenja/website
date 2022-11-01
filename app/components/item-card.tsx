@@ -19,7 +19,7 @@ const ItemCard = ({ image, title, tag }: ItemCardProps) => {
       <h2 className="mb-4 text-lg font-medium underline decoration-violet-500 decoration-wavy decoration-2 underline-offset-4 dark:decoration-orange-300">
         {title}
       </h2>
-      <p className="rounded-sm bg-violet-500 py-1 px-3 text-xs uppercase text-slate-500 dark:bg-slate-500 dark:bg-opacity-50 dark:text-slate-400 group-hover:dark:text-slate-300">
+      <p className="rounded-sm bg-violet-500 py-1 px-3 text-xs uppercase text-white dark:bg-slate-500 dark:bg-opacity-50 dark:text-slate-400 group-hover:dark:text-slate-300">
         {tag}
       </p>
     </div>

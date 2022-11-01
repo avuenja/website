@@ -8,7 +8,7 @@ import Section from './components/section'
 const Home = () => {
   return (
     <>
-      <div className="flex items-center justify-between py-8">
+      <div className="flex flex-col-reverse items-center justify-between gap-4 py-4 text-center md:flex-row md:py-8 md:text-left">
         <div>
           <h1 className="text-3xl font-semibold">Marcelo Pecin</h1>
           <p className="text-slate-500 dark:text-slate-400">
@@ -29,7 +29,7 @@ const Home = () => {
       </Jumbotron>
 
       <Section title="About">
-        <p className="text-justify indent-8 leading-relaxed">
+        <p className="text-justify indent-4 leading-relaxed md:indent-8">
           I have been a PHP developer since 2013 and over time, I learned
           countless technics, languages, and patterns that helped me to create
           what I am now. Now I also work effectively with the ReactJs and React

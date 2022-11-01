@@ -10,7 +10,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="flex items-center px-8 py-6">
+    <header className="container mx-auto flex items-center py-6 px-4 lg:px-48 2xl:px-96">
       <Link href="/" className="group flex items-center text-lg font-medium">
         <CodeBracketIcon className="mr-2 -rotate-180 stroke-violet-500 duration-1000 group-hover:rotate-180 dark:stroke-orange-300" />
         Marcelo Pecin

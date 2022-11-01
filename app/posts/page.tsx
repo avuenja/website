@@ -13,7 +13,7 @@ const Posts = () => {
   ]
 
   return (
-    <div className="my-16 grid grid-cols-2 gap-4">
+    <div className="my-6 grid grid-cols-1 gap-4 md:my-16 md:grid-cols-2">
       {posts.map((post) => (
         <Link key={post.href} href={post.href} target="_blank">
           <ItemCard image={post.img} title={post.title} tag={post.tag} />

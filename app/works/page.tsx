@@ -9,7 +9,7 @@ const Works = () => {
     },
   ]
   return (
-    <div className="my-16 grid grid-cols-2 gap-4">
+    <div className="my-6 grid grid-cols-1 gap-4 md:my-16 md:grid-cols-2">
       {works.map((work) => (
         <Link key={work.href} href={work.href} target="_blank">
           <div className="group flex flex-col rounded-md bg-violet-100 p-2 hover:bg-opacity-40 hover:shadow-lg dark:bg-slate-500 dark:bg-opacity-50">
