@@ -8,7 +8,7 @@ interface ItemLinkProps {
 
 const ItemLink = ({ href, children }: ItemLinkProps) => {
   return (
-    <div className="group ml-2 inline-flex items-center md:ml-8">
+    <div className="group ml-2 inline-flex items-center md:ml-4">
       <ChevronDoubleRightIcon className="mr-2 stroke-violet-500 transition-transform duration-700 group-hover:rotate-45 dark:stroke-orange-300" />
 
       <Link

@@ -29,7 +29,7 @@ const Home = () => {
       </Jumbotron>
 
       <Section title="About">
-        <p className="text-justify indent-4 leading-relaxed md:indent-8">
+        <p className="text-justify indent-4 leading-relaxed md:indent-4">
           I have been a PHP developer since 2013 and over time, I learned
           countless technics, languages, and patterns that helped me to create
           what I am now. Now I also work effectively with the ReactJs and React
