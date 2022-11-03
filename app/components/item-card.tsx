@@ -8,7 +8,7 @@ interface ItemCardProps {
 
 const ItemCard = ({ image, title, tag }: ItemCardProps) => {
   return (
-    <div className="group flex flex-col items-start rounded-md bg-violet-100 p-2 hover:bg-opacity-40 hover:shadow-lg dark:bg-slate-500 dark:bg-opacity-50">
+    <div className="group flex flex-col items-start rounded-md bg-violet-100 p-2 hover:bg-violet-200 hover:shadow-lg dark:bg-slate-500 dark:bg-opacity-50 hover:dark:bg-opacity-40">
       <Image
         width={500}
         height={150}
