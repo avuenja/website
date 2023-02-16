@@ -48,7 +48,6 @@ const Home = () => {
           <ItemLink href="https://www.instagram.com/celopeccin">
             Instagram
           </ItemLink>
-          <ItemLink href="https://www.twitter.com/avuenja">Twitter</ItemLink>
         </div>
       </Section>
     </>
